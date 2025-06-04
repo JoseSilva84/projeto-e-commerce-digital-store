@@ -21,21 +21,21 @@ const Footer = () => {
                     {/* Coluna 2: Informação */}
                     <div className="flex flex-col gap-2 flex-1">
                         <span className="font-semibold">Informação</span>
-                        <a href="#" className="!text-white hover:text-pink-800 hover:!border-b-1 !inline-block">Sobre Drip Store</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Segurança</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Wishlist</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Blog</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Trabalhe conosco</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Meus Pedidos</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Sobre Drip Store</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Segurança</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Wishlist</a>
+                        <a href="#" className="!text-white hover:!text-pink-800  !border-b-0">Blog</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Trabalhe conosco</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Meus Pedidos</a>
                     </div>
                     {/* Coluna 3: Categoria */}
                     <div className="flex flex-col gap-2 flex-1">
                         <span className="font-semibold">Categoria</span>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Camisetas</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Calças</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Bonés</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Headphones</a>
-                        <a href="#" className="!text-white hover:text-pink-800 block">Tênis</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Camisetas</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Calças</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Bonés</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Headphones</a>
+                        <a href="#" className="!text-white hover:!text-pink-800 block !border-b-0">Tênis</a>
                     </div>
                     {/* Coluna 4: Contato */}
                     <div className="flex flex-col gap-2 flex-1">
