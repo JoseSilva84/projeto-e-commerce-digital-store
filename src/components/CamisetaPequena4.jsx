@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const CamisetaPequena = () => {
+const CamisetaPequena2 = () => {
     const [hovered, setHovered] = useState(false);
 
     return ( 
         <>
             <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center hover:shadow-2xl">
                 <img
-                    src={hovered ? "/src/assets/camisetas2.png" : "/src/assets/camisetas.png"}
+                    src={hovered ? "/src/assets/headphones2.png" : "/src/assets/headphones.png"}
                     alt="Camiseta"
                     className="w-20 h-20 m-12 hover:scale-110 cursor-pointer"
                     onMouseEnter={() => setHovered(true)}
@@ -18,4 +18,4 @@ const CamisetaPequena = () => {
      );
 }
  
-export default CamisetaPequena;
+export default CamisetaPequena2;
