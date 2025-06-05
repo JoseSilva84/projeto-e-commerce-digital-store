@@ -8,6 +8,7 @@ import Section from "./components/Section";
 import Carrosel from "./components/Carrosel";
 import Colecoes from "./components/colecoes";
 import Camiseta from "./components/camiseta";
+import ProdutosHome from "./components/ProdutosHome";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Carrosel />
       <Colecoes />
       <Camiseta />
+      <ProdutosHome />
       <Footer />
     </>
   )
