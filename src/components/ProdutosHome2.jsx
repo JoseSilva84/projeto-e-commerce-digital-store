@@ -3,13 +3,9 @@ import Product2 from "./Product2";
 import Product3 from "./Product3";
 import Product4 from "./Product4";
 
-const ProdutosHome = () => {
+const ProdutosHome2 = () => {
     return ( 
         <>
-            <div className="flex justify-between items-center px-4 py-2">
-                <p className="text-xl text-black text-left mb-2 font-bold mx-1">Produtos em alta</p>
-                <p className="text-lg text-pink-700 ml-auto cursor-pointer hover:underline">Ver todos -&gt;</p>
-            </div>
             <div className="flex flex-wrap justify-center gap-10 px-2 py-2">
                 {/* Produto 1 */}
                 <div className="w-60 flex flex-col items-center rounded-lg">
@@ -56,4 +52,4 @@ const ProdutosHome = () => {
      );
 }
  
-export default ProdutosHome;
+export default ProdutosHome2;

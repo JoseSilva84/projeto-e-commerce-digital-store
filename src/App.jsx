@@ -9,6 +9,7 @@ import Carrosel from "./components/Carrosel";
 import Colecoes from "./components/colecoes";
 import Camiseta from "./components/camiseta";
 import ProdutosHome from "./components/ProdutosHome";
+import ProdutosHome2 from "./components/ProdutosHome2";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Colecoes />
       <Camiseta />
       <ProdutosHome />
+      <ProdutosHome2 />
       <Footer />
     </>
   )
