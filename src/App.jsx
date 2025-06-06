@@ -10,6 +10,7 @@ import Colecoes from "./components/colecoes";
 import Camiseta from "./components/camiseta";
 import ProdutosHome from "./components/ProdutosHome";
 import ProdutosHome2 from "./components/ProdutosHome2";
+import ProductJordan from "./components/ProductJordan";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Camiseta />
       <ProdutosHome />
       <ProdutosHome2 />
+      <ProductJordan />
       <Footer />
     </>
   )
