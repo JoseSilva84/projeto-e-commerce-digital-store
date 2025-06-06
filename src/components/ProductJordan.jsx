@@ -7,8 +7,8 @@ const ProductJordan = () => {
     return ( 
         <>
             <div className="w-screen bg-white flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mt-16 p-4 lg:p-8 relative left-1/2 right-1/2 -mx-[50vw]">
-                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 w-full">
-                    <div className="flex-1 flex justify-center lg:justify-end">
+                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 w-full my-8">
+                    <div className="flex-1 flex justify-center lg:justify-end h-80">
                         <img src="/src/assets/jordan.png" alt="jordan" />
                     </div>
                     <div className="flex-1 lg:pr-8 text-left">
