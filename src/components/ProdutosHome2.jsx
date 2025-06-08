@@ -12,7 +12,7 @@ const ProdutosHome2 = () => {
                     <Product1 />
                     <p className="text-gray-500 -ml-50 text-sm mt-2">Tênis</p>
                     <p className="text-black text-xl font-extrabold">K-Swiss V8 - Masculino</p>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 -ml-15">
                         <span className="text-gray-400 font-bold line-through">R$ 200,00</span>
                         <span className="text-black font-extrabold">R$ 100,00</span>
                     </div>
@@ -22,7 +22,7 @@ const ProdutosHome2 = () => {
                     <Product2 />
                     <p className="text-gray-500 -ml-50 text-sm mt-2">Tênis</p>
                     <p className="text-black text-xl font-extrabold">K-Swiss V8 - Masculino</p>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 -ml-15">
                         <span className="text-gray-400 font-bold line-through">R$ 200,00</span>
                         <span className="text-black font-extrabold">R$ 100,00</span>
                     </div>
@@ -32,7 +32,7 @@ const ProdutosHome2 = () => {
                     <Product3 />
                     <p className="text-gray-500 -ml-50 text-sm mt-2">Tênis</p>
                     <p className="text-black text-xl font-extrabold">K-Swiss V8 - Masculino</p>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 -ml-15">
                         <span className="text-gray-400 font-bold line-through">R$ 200,00</span>
                         <span className="text-black font-extrabold">R$ 100,00</span>
                     </div>
@@ -42,7 +42,7 @@ const ProdutosHome2 = () => {
                     <Product4 />
                     <p className="text-gray-500 -ml-50 text-sm mt-2">Tênis</p>
                     <p className="text-black text-xl font-extrabold">K-Swiss V8 - Masculino</p>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 -ml-15">
                         <span className="text-gray-400 font-bold line-through">R$ 200,00</span>
                         <span className="text-black font-extrabold">R$ 100,00</span>
                     </div>

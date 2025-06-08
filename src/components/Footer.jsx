@@ -1,7 +1,11 @@
 import logo from '../assets/logo.png'
-import logos from '../assets/logos.png'
+import { useState } from "react";
 
 const Footer = () => {
+    const [hovered, setHovered] = useState(false);
+    const [hovered2, setHovered2] = useState(false);
+    const [hovered3, setHovered3] = useState(false);
+
     return ( 
         <footer className="bg-gray-800 text-white py-20 absolute left-0 w-full">
             <div className="max-w-7xl mx-auto px-4">
@@ -14,8 +18,34 @@ const Footer = () => {
                         </div>
                         {/* <span className="text-2xl text-white font-semibold">Digital College</span> */}
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <div className="w-25 h-25 -mt-30 rounded flex items-center justify-center">
-                            <img src={logos} alt="logo" className="w-full h-full object-contain mt-50" />
+                        <div className="w-25 h-25 -mt-35 -ml-1 rounded flex items-center justify-center">
+                            <div className="flex gap-2">
+                                <img
+                                    src={hovered ? "/src/assets/facebook2.png" : "/src/assets/facebook.png"}
+                                    alt="facebook"
+                                    className="w-8 h-6 m-2 cursor-pointer mt-60"
+                                    onMouseEnter={() => setHovered(true)}
+                                    onMouseLeave={() => setHovered(false)}
+                                />
+                            </div>
+                            <div  className="flex gap-2">
+                                <img
+                                    src={hovered2 ? "/src/assets/instagram2.png" : "/src/assets/instagram.png"}
+                                    alt="instagram"
+                                    className="w-8 h-6 m-2 cursor-pointer mt-60"
+                                    onMouseEnter={() => setHovered2(true)}
+                                    onMouseLeave={() => setHovered2(false)}
+                                />
+                            </div>
+                            <div className="flex gap-2">
+                                <img
+                                    src={hovered3 ? "/src/assets/twitter2.png" : "/src/assets/twitter.png"}
+                                    alt="twitter"
+                                    className="w-8 h-6 m-2 cursor-pointer mt-60"
+                                    onMouseEnter={() => setHovered3(true)}
+                                    onMouseLeave={() => setHovered3(false)}
+                                />
+                            </div>
                         </div>
                     </div>
                     {/* Coluna 2: Informação */}
