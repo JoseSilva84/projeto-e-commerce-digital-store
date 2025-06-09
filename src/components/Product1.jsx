@@ -8,14 +8,6 @@ const Product1 = () => {
                     <ListaCompras1 />
                 </div>
             </div>
-            {/* <div className="flex-1/4 gap-x-6 px-2 py-4">
-                <p className= "text-gray-500 text-sm text-left px-120">Tênis</p>
-                <p className= "text-black text-xl font-extrabold text-left px-120">K-Swiss V8 - Masculino</p>
-                <div className="flex items-center px-120 m-0 gap-2">
-                    <p className= "text-gray-400 font-bold line-through">R$ 200,00</p>
-                    <p className= "text-black font-extrabold">R$ 100,00</p>
-                </div>
-            </div> */}
         </>
      );
 }
