@@ -9,7 +9,7 @@ const ProductJordan = () => {
             <div className="w-screen bg-white flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mt-16 p-4 lg:p-8 relative left-1/2 right-1/2 -mx-[50vw]">
                 <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 w-full my-8">
                     <div className="flex-1 flex justify-center lg:justify-end h-80 relative">
-                        <img src="/src/assets/jordan.png" alt="jordan" className="relative z-10" />
+                        <img src="/src/assets/jordan.png" alt="jordan" className="relative z-10 transition-transform duration-300 hover:translate-x-4" />
                         <img src="/src/assets/elipse.png" alt="elipse" className="absolute -top-10 left-50 object-cover z-0" />
                     </div>
                     <div className="flex-1 lg:pr-8 text-left">
