@@ -1,6 +1,7 @@
 import { InputText } from "primereact/inputtext"
 import { Button } from "primereact/button"
 import cartIcon from '../assets/cart.svg'
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return ( 
@@ -40,18 +41,18 @@ const Header = () => {
        {/* border-b-2 */}
       <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center gap-8 py-3 border-t border-gray-100">
-          <a href="#" className="text-pink-600 font-medium border-pink-600 pb-1">
+          <Link to="/notfound" className="text-pink-600 font-medium border-pink-600 pb-1">
             Home
-          </a>
-          <a href="#" className="text-pink-600 hover:text-pink-800 font-medium">
+          </Link>
+          <Link to="/produtos" className="text-pink-600 hover:text-pink-800 font-medium">
             Produtos
-          </a>
-          <a href="#" className="text-pink-600 hover:text-pink-800 font-medium">
+          </Link>
+          <Link to="/notfound" className="text-pink-600 hover:text-pink-800 font-medium">
             Categorias
-          </a>
-          <a href="#" className="text-pink-600 hover:text-pink-800 font-medium">
+          </Link>
+          <Link to="/notfound" className="text-pink-600 hover:text-pink-800 font-medium">
             Meus Pedidos
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
