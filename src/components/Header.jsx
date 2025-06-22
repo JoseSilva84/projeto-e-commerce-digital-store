@@ -41,13 +41,13 @@ const Header = () => {
        {/* border-b-2 */}
       <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center gap-8 py-3 border-t border-gray-100">
-          <Link to="/notfound" className="text-pink-600 font-medium border-pink-600 pb-1">
+          <Link to="/" className="text-pink-600 font-medium border-pink-600 pb-1">
             Home
           </Link>
           <Link to="/produtos" className="text-pink-600 hover:text-pink-800 font-medium">
             Produtos
           </Link>
-          <Link to="/notfound" className="text-pink-600 hover:text-pink-800 font-medium">
+          <Link to="/emconstrucao" className="text-pink-600 hover:text-pink-800 font-medium">
             Categorias
           </Link>
           <Link to="/notfound" className="text-pink-600 hover:text-pink-800 font-medium">
