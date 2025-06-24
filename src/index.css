@@ -99,6 +99,12 @@ button:focus-visible {
   right: -60px; /* Afasta seta da direita */
 }
 
+.produtos-em-quatro-hack > * {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4rem;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: rgba(255, 255, 255, 0.87);
