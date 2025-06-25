@@ -1,20 +1,23 @@
 import { useState } from "react";
 import ProdutosEmQuatro from "../components/ProdutosEmQuatro";
+import Ordenacao from "../components/Ordenacao";
 
 const marcas = ["Adidas", "Calenciaga", "K-Swiss", "Nike", "Puma"];
 const categorias = ["Esporte e lazer", "Casual", "Utilitário", "Corrida"];
 const generos = ["Masculino", "Feminino", "Unisex"];
+const estados = ["Novo", "Usado"];
 
 const ProductListingPage = () => {
     const [selectedMarca, setSelectedMarca] = useState("Adidas");
     const [selectedCategoria, setSelectedCategoria] = useState("Esporte e lazer");
     const [selectedGenero, setSelectedGenero] = useState("Masculino");
+    const [selectedEstado, setSelectedEstado] = useState("Novo");
 
     return (
         <div className="flex">
             {/* Filtro lateral */}
-            <div className="bg-white flex flex-col items-center justify-start py-10 mt-40 w-72 min-h-[400px] shadow rounded-lg mb-10">
-                <div className="flex items-center justify-center mb-4">
+            <div className="bg-white flex flex-col items-center justify-start py-10 mt-40 w-72 min-h-[400px] shadow rounded-lg mb-120">
+                <div className="flex items-center justify-center mb-4 -ml-25">
                     <p className="text-black items-stretch text-left font-bold">Filtrar por</p>
                 </div>
                 <div className="w-3/4 border-t border-gray-400 pt-4 text-center flex flex-col gap-2">
@@ -95,11 +98,41 @@ const ProductListingPage = () => {
                         </label>
                     ))}
                 </div>
+                <div className="w-3/4 pt-4 text-center flex flex-col gap-2">
+                    <p className="text-black items-stretch text-left font-bold">Estado</p>
+                    {estados.map((estado) => (
+                        <label
+                            key={estado}
+                            htmlFor={estado}
+                            className="flex items-center cursor-pointer relative"
+                        >
+                            <input
+                                type="radio"
+                                id={estado}
+                                name="estado"
+                                value={estado}
+                                checked={selectedEstado === estado}
+                                onChange={() => setSelectedEstado(estado)}
+                                className="peer appearance-none w-5 h-5 border-2 border-gray-400 rounded-none m-2 checked:bg-pink-600 checked:border-pink-600 cursor-pointer flex-shrink-0"
+                            />
+                            {selectedEstado === estado && (
+                                <span className="pointer-events-none absolute left-2 top-2 flex items-center justify-center w-5 h-5 text-white text-xs select-none">
+                                    ✔
+                                </span>
+                            )}
+                            <span className="text-black ml-2">{estado}</span>
+                        </label>
+                    ))}
+                </div>
             </div>
             {/* Produtos */}
-            <div className="flex flex-row gap-6 justify-center mt-20 py-5">
+            <div className="flex flex-row gap-6 justify-center -mt-8 py-5">
                 <div className="scale-80 w-full">
                     <div className="produtos-em-quatro-hack">
+                        {/* <Ordenacao /> */}
+                        <ProdutosEmQuatro />
+                        <ProdutosEmQuatro />
+                        <ProdutosEmQuatro />
                         <ProdutosEmQuatro />
                     </div>
                 </div>
