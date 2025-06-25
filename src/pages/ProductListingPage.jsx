@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ProdutosEmQuatro from "../components/ProdutosEmQuatro";
+import { Link } from "react-router-dom";
 
 const marcas = ["Adidas", "Calenciaga", "K-Swiss", "Nike", "Puma"];
 const categorias = ["Esporte e lazer", "Casual", "Utilitário", "Corrida"];
@@ -117,7 +118,7 @@ const ProductListingPage = () => {
             {/* Produtos e Ordenação */}
             <div className="flex-1 flex flex-col items-center mt-28 gap-10 mb-6">
                 {/* Ordenação */}
-                <div className="w-70 -mb-50">
+                <div className="w-70 -mb-50 ml-160">
                     <div className="relative">
                         <select
                             value={selectedOption}
