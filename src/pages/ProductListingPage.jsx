@@ -20,14 +20,9 @@ const ProductListingPage = () => {
 
     return (
         <>
-            <div className="flex justify-between items-right pl-270 m-25">
-                <Button className="!bg-pink-600 hover:!bg-pink-700 !text-white !px-8 !py-2 rounded-lg !border-0 !shadow-none" onClick={() => navigate(-1)}>
-                    Voltar
-                </Button>
-            </div>
-            <div className="flex mt-15">
+            <div className="flex mt-5">
                 {/* Filtro lateral */}
-                <div className="bg-white flex flex-col items-center justify-start py-10 mt-50 w-72 min-h-[400px] shadow rounded-lg mb-130">
+                <div className="bg-white flex flex-col items-center justify-start py-10 mt-60 w-72 min-h-[400px] shadow rounded-lg mb-130">
                     <div className="flex items-center justify-center mb-4">
                         <p className="text-black items-stretch text-left font-bold -ml-35">Filtrar por</p>
                     </div>
@@ -125,9 +120,12 @@ const ProductListingPage = () => {
                     </div>
                 </div>
                 {/* Produtos e Ordenação */}
-                <div className="flex-1 flex flex-col items-center mt-28 gap-10 mb-6">
+                <div className="flex-1 flex flex-col items-center mt-18 gap-5 mb-8">
                     {/* Ordenação */}
                     <div className="w-70 -mb-50 ml-160">
+                        <Button className="!bg-pink-600 hover:!bg-pink-700 !text-white !px-8 !py-2 rounded-lg !border-0 !shadow-none !m-8 !ml-42" onClick={() => navigate(-1)}>
+                            Voltar
+                        </Button>
                         <div className="relative">
                             <select
                                 value={selectedOption}
