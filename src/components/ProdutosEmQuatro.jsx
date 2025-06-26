@@ -23,7 +23,9 @@ const ProdutosEmQuatro = () => {
                 </div>
                 {/* Produto 2 */}
                 <div className="w-60 flex flex-col items-center rounded-lg">
-                    <Product2 />
+                    <div onClick={() => navigate("/produtos")} className="underline2">
+                        <Product2 />
+                    </div>
                     <p className="text-gray-500 -ml-50 text-sm mt-2">Tênis</p>
                     <p className="text-black text-xl font-extrabold">K-Swiss V8 - Masculino</p>
                     <div className="flex items-center gap-2 -ml-15">
