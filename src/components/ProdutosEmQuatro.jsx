@@ -23,7 +23,7 @@ const ProdutosEmQuatro = () => {
                 </div>
                 {/* Produto 2 */}
                 <div className="w-60 flex flex-col items-center rounded-lg">
-                    <div onClick={() => navigate("/produtos")} className="underline2">
+                    <div onClick={() => navigate("produtos/:id")} className="underline2">
                         <Product2 />
                     </div>
                     <p className="text-gray-500 -ml-50 text-sm mt-2">Tênis</p>
