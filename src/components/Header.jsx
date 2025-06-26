@@ -1,13 +1,14 @@
-import { InputText } from "primereact/inputtext"
-import { Button } from "primereact/button"
-import cartIcon from '../assets/cart.svg'
-import { Link } from "react-router-dom";
+import { InputText } from "primereact/inputtext";
+import { Button } from "primereact/button";
+import cartIcon from '../assets/cart.svg';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return ( 
     <header className="bg-white border-b fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between gap-4">
+          {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 !bg-pink-600 rounded flex items-center justify-center">
               <div className="text-white font-bold text-lg">{">"}</div>
@@ -15,6 +16,7 @@ const Header = () => {
             <span className="text-2xl font-bold text-pink-600">Digital Store</span>
           </div>
 
+          {/* Campo de busca */}
           <div className="flex-1 max-w-md mx-8">
             <div className="relative">
               <InputText
@@ -27,8 +29,9 @@ const Header = () => {
             </div>
           </div>
 
+          {/* Ações do usuário */}
           <div className="flex items-center gap-4">
-            <a className=" px-4 py-2 rounded underline !border-0" href="#">Cadastre-se</a>
+            <a className="px-4 py-2 rounded underline !border-0" href="#">Cadastre-se</a>
             <Button label="Entrar" className="!bg-pink-600 hover:!bg-pink-700 !text-white !px-8 !py-2 rounded-lg !border-0 !shadow-none" />
             <div className="relative">
               <button className="bg-transparent hover:!border-pink-200 px-3 py-2 rounded flex items-center justify-center focus:!outline-none">
@@ -38,21 +41,50 @@ const Header = () => {
           </div>
         </div>
       </div>
-       {/* border-b-2 */}
+
+      {/* Navegação */}
       <div className="max-w-7xl mx-auto px-4">
         <nav className="flex items-center gap-8 py-3 border-t border-gray-100">
-          <Link to="/" className="text-pink-600 font-medium border-pink-600 pb-1">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-pink-600 font-bold border-b-2 border-pink-600 pb-1"
+                : "text-gray-600 hover:text-pink-600 font-medium pb-1"
+            }
+          >
             Home
-          </Link>
-          <Link to="/produtos" className="text-pink-600 hover:text-pink-800 font-medium">
+          </NavLink>
+          <NavLink
+            to="/produtos"
+            className={({ isActive }) =>
+              isActive
+                ? "text-pink-600 font-bold border-b-2 border-pink-600 pb-1"
+                : "text-gray-600 hover:text-pink-600 font-medium pb-1"
+            }
+          >
             Produtos
-          </Link>
-          <Link to="/emconstrucao" className="text-pink-600 hover:text-pink-800 font-medium">
+          </NavLink>
+          <NavLink
+            to="/emconstrucao"
+            className={({ isActive }) =>
+              isActive
+                ? "text-pink-600 font-bold border-b-2 border-pink-600 pb-1"
+                : "text-gray-600 hover:text-pink-600 font-medium pb-1"
+            }
+          >
             Categorias
-          </Link>
-          <Link to="/notfound" className="text-pink-600 hover:text-pink-800 font-medium">
+          </NavLink>
+          <NavLink
+            to="/notfound"
+            className={({ isActive }) =>
+              isActive
+                ? "text-pink-600 font-bold border-b-2 border-pink-600 pb-1"
+                : "text-gray-600 hover:text-pink-600 font-medium pb-1"
+            }
+          >
             Meus Pedidos
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </header>
