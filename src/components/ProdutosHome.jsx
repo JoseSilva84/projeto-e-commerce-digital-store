@@ -1,5 +1,5 @@
 import ProdutosEmQuatro from "./ProdutosEmQuatro";
-import VerTodos from "./verTodos";
+import VerTodos from "./VerTodos.jsx";
 
 const ProdutosHome = () => {
     return ( 
