@@ -1,4 +1,4 @@
-import CamisetaPequena from "./camisetaPequena.jsx";
+import CamisetaPequena from "./CamisetaPequena.jsx";
 import CamisetaPequena2 from "./CamisetaPequena2.jsx";
 import CamisetaPequena3 from "./CamisetaPequena3.jsx";
 import CamisetaPequena4 from "./CamisetaPequena4.jsx";
