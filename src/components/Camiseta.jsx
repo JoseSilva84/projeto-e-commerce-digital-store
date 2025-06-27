@@ -1,7 +1,7 @@
-import CamisetaPequena from "./camisetaPequena";
-import CamisetaPequena2 from "./CamisetaPequena2";
-import CamisetaPequena3 from "./CamisetaPequena3";
-import CamisetaPequena4 from "./CamisetaPequena4";
+import CamisetaPequena from "./camisetaPequena.jsx";
+import CamisetaPequena2 from "./CamisetaPequena2.jsx";
+import CamisetaPequena3 from "./CamisetaPequena3.jsx";
+import CamisetaPequena4 from "./CamisetaPequena4.jsx";
 
 const Camiseta = () => {
     return ( 
