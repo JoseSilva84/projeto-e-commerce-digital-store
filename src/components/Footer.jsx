@@ -14,37 +14,41 @@ const Footer = () => {
                     <div className="flex flex-col gap-2 flex-1">
                         <div className="w-50 h-50 -mt-35 rounded flex items-center justify-center">
                             <img src={logo} alt="logo" className="w-full h-full object-contain mt-30" />
-                            {/* <div className="text-black font-bold text-lg">{">"}</div> */}
                         </div>
-                        {/* <span className="text-2xl text-white font-semibold">Digital College</span> */}
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                         <div className="w-25 h-25 -mt-35 -ml-1 rounded flex items-center justify-center">
                             <div className="flex gap-2">
-                                <img
-                                    src={hovered ? "/src/assets/facebook2.png" : "/src/assets/facebook.png"}
-                                    alt="facebook"
-                                    className="w-8 h-6 m-2 cursor-pointer mt-60"
-                                    onMouseEnter={() => setHovered(true)}
-                                    onMouseLeave={() => setHovered(false)}
-                                />
+                                <a href="https://www.facebook.com/digitalcollegebr'" target="_blank" rel="noopener noreferrer" className="block !border-b-0">
+                                    <img
+                                        src={hovered ? "/src/assets/facebook2.png" : "/src/assets/facebook.png"}
+                                        alt="facebook"
+                                        className="w-4 h-6 m-2 cursor-pointer mt-60"
+                                        onMouseEnter={() => setHovered(true)}
+                                        onMouseLeave={() => setHovered(false)}
+                                    />
+                                </a>
                             </div>
                             <div  className="flex gap-2">
-                                <img
-                                    src={hovered2 ? "/src/assets/instagram2.png" : "/src/assets/instagram.png"}
-                                    alt="instagram"
-                                    className="w-8 h-6 m-2 cursor-pointer mt-60"
-                                    onMouseEnter={() => setHovered2(true)}
-                                    onMouseLeave={() => setHovered2(false)}
-                                />
+                                <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdigitalcollegebr%2F&is_from_rlen=true" target="_blank" rel="noopener noreferrer" className="block !border-b-0">
+                                    <img
+                                        src={hovered2 ? "/src/assets/instagram2.png" : "/src/assets/instagram.png"}
+                                        alt="instagram"
+                                        className="w-6 h-6 m-2 cursor-pointer mt-60"
+                                        onMouseEnter={() => setHovered2(true)}
+                                        onMouseLeave={() => setHovered2(false)}
+                                    />
+                                </a>
                             </div>
                             <div className="flex gap-2">
-                                <img
-                                    src={hovered3 ? "/src/assets/twitter2.png" : "/src/assets/twitter.png"}
-                                    alt="twitter"
-                                    className="w-8 h-6 m-2 cursor-pointer mt-60"
-                                    onMouseEnter={() => setHovered3(true)}
-                                    onMouseLeave={() => setHovered3(false)}
-                                />
+                                <a href="https://x.com/eaicollegers" target="_blank" rel="noopener noreferrer" className="block !border-b-0">
+                                    <img
+                                        src={hovered3 ? "/src/assets/twitter2.png" : "/src/assets/twitter.png"}
+                                        alt="twitter"
+                                        className="w-7 h-6 m-2 cursor-pointer mt-60"
+                                        onMouseEnter={() => setHovered3(true)}
+                                        onMouseLeave={() => setHovered3(false)}
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>
