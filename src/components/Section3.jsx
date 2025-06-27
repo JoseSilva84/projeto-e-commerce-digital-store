@@ -2,6 +2,7 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { Button } from "primereact/button";
+import WhiteSneakers3 from "../assets/white-sneakers3.png";
 
 const Section = () => {
     return ( 
@@ -16,7 +17,7 @@ const Section = () => {
                     <Button label="Ver Ofertas" className="!bg-pink-600 hover:!bg-pink-700 !text-white !px-8 !py-2 rounded-lg !border-0 mt-4 focus:!outline-none !shadow-none" />
                 </div>
                 <div className="flex-1 flex justify-center lg:justify-end">
-                    <img src="/src/assets/white-sneakers3.png" alt="white-sneakers3" />
+                    <img src={WhiteSneakers3} alt="white-sneakers3" />
                 </div>
             </div>
         </>

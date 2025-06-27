@@ -1,5 +1,11 @@
 import logo from '../assets/logo.png'
 import { useState } from "react";
+import Facebook2 from '../assets/facebook2.png';
+import Facebook1 from '../assets/facebook.png';
+import Instagram2 from '../assets/instagram2.png';
+import Instagram1 from '../assets/instagram.png';
+import Twitter2 from '../assets/twitter2.png';
+import Twitter1 from '../assets/twitter.png';
 
 const Footer = () => {
     const [hovered, setHovered] = useState(false);
@@ -20,7 +26,7 @@ const Footer = () => {
                             <div className="flex gap-2">
                                 <a href="https://www.facebook.com/digitalcollegebr'" target="_blank" rel="noopener noreferrer" className="block !border-b-0">
                                     <img
-                                        src={hovered ? "/src/assets/facebook2.png" : "/src/assets/facebook.png"}
+                                        src={hovered ? Facebook2 : Facebook1}
                                         alt="facebook"
                                         className="w-4 h-6 m-2 cursor-pointer mt-60"
                                         onMouseEnter={() => setHovered(true)}
@@ -31,7 +37,7 @@ const Footer = () => {
                             <div  className="flex gap-2">
                                 <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdigitalcollegebr%2F&is_from_rlen=true" target="_blank" rel="noopener noreferrer" className="block !border-b-0">
                                     <img
-                                        src={hovered2 ? "/src/assets/instagram2.png" : "/src/assets/instagram.png"}
+                                        src={hovered2 ? Instagram2 : Instagram1}
                                         alt="instagram"
                                         className="w-6 h-6 m-2 cursor-pointer mt-60"
                                         onMouseEnter={() => setHovered2(true)}
@@ -42,7 +48,7 @@ const Footer = () => {
                             <div className="flex gap-2">
                                 <a href="https://x.com/eaicollegers" target="_blank" rel="noopener noreferrer" className="block !border-b-0">
                                     <img
-                                        src={hovered3 ? "/src/assets/twitter2.png" : "/src/assets/twitter.png"}
+                                        src={hovered3 ? Twitter2 : Twitter1}
                                         alt="twitter"
                                         className="w-7 h-6 m-2 cursor-pointer mt-60"
                                         onMouseEnter={() => setHovered3(true)}

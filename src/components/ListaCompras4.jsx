@@ -1,6 +1,7 @@
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
+import Kswiss4 from "../assets/K-Swiss.png";
 
 const ListaCompras4 = () => {
     return ( 
@@ -12,7 +13,7 @@ const ListaCompras4 = () => {
                     </div>
                 </div>
                 <div className="flex-1 flex justify-center lg:justify-end relative">
-                    <img src="/src/assets/K-Swiss.png" alt="K-Swiss Masculino" className="absolute top-20 mx-24 transform scale-[4.2] -rotate-32 " style={{ width: '1200px', height: 'auto' }} />
+                    <img src={Kswiss4} alt="K-Swiss Masculino" className="absolute top-20 mx-24 transform scale-[4.2] -rotate-32 " style={{ width: '1200px', height: 'auto' }} />
                 </div>
             </div>
         </>
